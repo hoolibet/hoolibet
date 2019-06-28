@@ -63,7 +63,7 @@ src/qt/test/moc*.cpp
 *.pyc
 *.o
 *.o-*
-*.patch
+# *.patch
 .hoolibet
 *.a
 *.pb.cc
