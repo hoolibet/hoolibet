@@ -1,0 +1,26 @@
+# /etc/conf.d/hoolibetd: config file for /etc/init.d/hoolibetd
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/hoolibet/hoolibet.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/hoolibetd"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/hoolibetd.pid"
+
+# Where to write hoolibetd data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/hoolibetd"
+
+# User and group to own hoolibetd process
+#BITCOIND_USER="hoolibet"
+#BITCOIND_GROUP="hoolibet"
+
+# Path to hoolibetd executable
+#BITCOIND_BIN="/usr/bin/hoolibetd"
+
+# Nice value to run hoolibetd under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

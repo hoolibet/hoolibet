@@ -1,0 +1,26 @@
+[Unit]
+Description=HooliBet's distributed currency daemon
+After=network.target
+
+[Service]
+User=hoolibet
+Group=hoolibet
+
+Type=forking
+PIDFile=/var/lib/hoolibetd/hoolibetd.pid
+
+ExecStart=/usr/bin/hoolibetd -daemon -pid=/var/lib/hoolibetd/hoolibetd.pid \
+          -conf=/etc/hoolibet/hoolibet.conf -datadir=/var/lib/hoolibetd
+
+ExecStop=-/usr/bin/hoolibet-cli -conf=/etc/hoolibet/hoolibet.conf \
+         -datadir=/var/lib/hoolibetd stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target

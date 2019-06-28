@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=HooliBet
+Comment=HooliBet P2P Cryptocurrency
+Comment[fr]=HooliBet, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=HooliBet, eşten eşe kriptografik sanal para birimi
+Exec=hoolibet-qt %u
+Terminal=false
+Type=Application
+Icon=hoolibet128
+MimeType=x-scheme-handler/hoolibet;
+Categories=Office;Finance;
